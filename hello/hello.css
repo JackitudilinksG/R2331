@@ -45,8 +45,22 @@ body {
 .content {
   padding: 56px 400px;
   color: #FAE8EB;
+  background-color: #42213D;
+  height: 200vh;
 }
 /* body looks */
+.content1 {
+  padding: 56px 400px;
+  color: #FAE8EB;
+  background-color: #42213D;
+  height: 100vh;
+}
+.content2 {
+  padding: 56px 400px;
+  color: #FAE8EB;
+  background-color: #42213D;
+  height: 100vh;
+}
 
 .sticky {
   position: fixed;
