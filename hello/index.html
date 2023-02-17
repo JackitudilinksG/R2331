@@ -11,6 +11,7 @@
   <a href="#content1">Examples</a>
   <a href="#content2">Members</a>
 </div>
+<div class="progress-bar" id="myBar"></div>
 <!-- buttons on navi -->
 
 <div class="content" id="content">       <!--all_paras-->
@@ -21,7 +22,7 @@
   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-  <p>Some text to enable scrolling.. Lorem ipsum dolgjhbhjvuthvgvhvgf, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
 </div>
 
 <div class="content" id="content1">       <!--all_paras-->
@@ -35,12 +36,12 @@
 </div>
 
 <script>        <!--JS-->
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {stick()};
 
 var navbar = document.getElementById("navbar");
 var sticky = navbar.offsetTop;
 
-function myFunction() {
+function stick() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
   } else {
@@ -48,6 +49,33 @@ function myFunction() {
   }
 }
 </script>
+
+<script>        <!--JS-->
+window.onscroll = function() {acol()};
+  
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+  
+function acol() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
+
+<script>
+  // When the user scrolls the page, execute myFunction 
+  window.onscroll = function() {myFunction()};
+  
+  function myFunction() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+  }
+  </script>
 
 </body>
 </html>
