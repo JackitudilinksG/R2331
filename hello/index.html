@@ -11,8 +11,10 @@
   <a href="#content1">Examples</a>
   <a href="#content2">Members</a>
 </div>
-<div class="progress-bar" id="myBar"></div>
 <!-- buttons on navi -->
+
+<div class="progress-bar" id="myBar"></div>
+
 
 <div class="content" id="content">       <!--all_paras-->
   <h3>FOSS - What is it?</h3>
@@ -23,19 +25,23 @@
   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
   <p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
-</div>
+  </div>
 
 <div class="content" id="content1">       <!--all_paras-->
   <h3>EXAMPLES</h3>
     <p>what are some examples?</p>
-</div>
+  </div>
 
 <div class="content" id="content2">      <!--all_paras-->
   <h3>Members</h3>
   <p>all memberss</p>
-</div>
+  </div>
 
-<script>        <!--JS-->
+  <div id="below">
+    <p>hello</p>
+  </div>
+
+<script>        <!-- STICKY JS -->
 window.onscroll = function() {stick()};
 
 var navbar = document.getElementById("navbar");
@@ -48,24 +54,9 @@ function stick() {
     navbar.classList.remove("sticky");
   }
 }
-</script>
+  </script>
 
-<script>        <!--JS-->
-window.onscroll = function() {acol()};
-  
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-  
-function acol() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-</script>
-
-<script>
+<script>        <!-- PROGRESS JS -->
   // When the user scrolls the page, execute myFunction 
   window.onscroll = function() {myFunction()};
   
