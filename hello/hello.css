@@ -25,6 +25,7 @@ body {
   background-color: #683257;
   width: 100%;            /* size of navbar itself */
   position: fixed;
+  font-family: 'Comfortaa', cursive;
 }
 /* navi looks */
 
@@ -37,18 +38,21 @@ body {
   text-decoration: none;
   font-size: 23px;
   width: 26.8%;
+  font-family: 'Comfortaa', cursive;
 }
 /* navi text */
 
 #navbar a:hover {
   background-color: #ddd;
   color: black;
+  font-family: 'Comfortaa', cursive;
 }
 /* navi active */
 
  a:active {
   background-color: #ddd;
   color: black;
+  font-family: 'Comfortaa', cursive;
 }
 
 .content {
