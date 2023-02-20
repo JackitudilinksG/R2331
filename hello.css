@@ -102,3 +102,7 @@ table{
     text-align: center;
     margin: 0 auto;
 } 
+a{
+  color: #FAE8EB;
+  text-decoration:none ;
+}
