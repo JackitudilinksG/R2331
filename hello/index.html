@@ -40,24 +40,12 @@
   <p>all memberss</p>
   </div>
 
-  <div id="below">
-    <p>hello</p>
+  <div id="bottom">
+    <p>Skeptics Mini-Project R2331</p>
+    <p>A messy website by back-end developers</p>
   </div>
-
-<script>        <!-- STICKY JS -->
-window.onscroll = function() {stick()};
-
-var navbar = document.getElementById("navbar");
-var sticky = navbar.offsetTop;
-
-function stick() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-  div
+  
+  <div>
  class="content" id="content1">      <!--all_paras-->
   <h2>Foss alternative</h2>
 <table>
@@ -98,8 +86,22 @@ function stick() {
   </tr>
 </table>
 </div>
-  </script>
 
+<script>        <!-- STICKY JS -->
+window.onscroll = function() {stick()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function stick() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+  </script>
+  
 <script>        <!-- PROGRESS JS -->
   // When the user scrolls the page, execute myFunction 
   window.onscroll = function() {myFunction()};
