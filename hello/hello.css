@@ -92,3 +92,25 @@ body {
   background-color: #42213D;
   height: 50vh;
 }
+
+table,tr,th,td{
+	border: 2px solid white;
+	border-collapse: collapse;
+	padding: 20px;
+	border-spacing: 100px;
+}
+
+th{
+	color: #FAE8EB;
+  background-color: #42213D;
+}
+
+table{
+    text-align: center;
+    margin: 0 auto;
+} 
+
+a{
+  color: #FAE8EB;
+  text-decoration:none ;
+}
