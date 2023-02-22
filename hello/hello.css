@@ -168,3 +168,6 @@ a{
   height: 150vh;
   text-align: center;
 }
+td:hover {
+  font-weight: bold;
+}
