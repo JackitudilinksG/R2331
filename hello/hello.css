@@ -168,6 +168,14 @@ a{
   height: 150vh;
   text-align: center;
 }
+
+#purimage {
+  z-index: 1;
+  position: relative;
+  padding-left: 725px;
+  bottom: 370px;
+}
+
 td:hover {
   font-weight: bold;
 }
