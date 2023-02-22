@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-size: 28px;
   font-family: 'Poppins', sans-serif;
-  background-color: #450920;
+  background-color: #42213D;
 }
 /* actual body */
 
@@ -65,7 +65,7 @@ body {
   width: 0%;
   margin-top: 76px;
   position: fixed;
-  z-index: 3;
+  z-index: 11;
 }
 
 #head-thing{
@@ -130,16 +130,18 @@ body {
 }
 
 #GNU {
-  padding-top: 1300px;
+  margin-top: 1px;
+  padding-top: 430px;
   padding-left: 400px;
   padding-right: 400px;
   color: #FAE8EB;
   background-color: #42213D;
-  height: 1vh;
+  height: 100vh;
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 45px;
   z-index: 2;
+  position: relative;
 }
 
 #history {
@@ -148,7 +150,7 @@ body {
   text-align: center;
   padding-right: 300px;
   padding-left: 300px;
-  z-index: 1;
+  z-index: 3;
   position: relative;
   top: -800px;
 }
@@ -177,9 +179,6 @@ table{
     text-align: center;
     margin: 0 auto;
 } 
-td:hover {
-  font-weight: bold;
-}
 
 a{
   color: #FAE8EB;
@@ -198,12 +197,20 @@ a{
   z-index: 1;
   position: relative;
   padding-left: 725px;
-  top: -520px;
+  top: -490px;
 }
 
 #fgereeimage {
   z-index: 1;
   position: relative;
   padding-right: 725px;
-  top: -870px;
+  top: -890px;
+}
+
+#abtgnu {
+  color: #FAE8EB;
+  background-color: #42213D;
+  text-align: center;
+  padding-right: 300px;
+  padding-left: 300px;
 }
