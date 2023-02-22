@@ -26,7 +26,7 @@ body {
   width: 100%;            /* size of navbar itself */
   position: fixed;
   font-family: 'Comfortaa', cursive;
-  z-index: 2;
+  z-index: 10;
 }
 /* navi looks */
   
@@ -40,7 +40,7 @@ body {
   font-size: 23px;
   width: 26.8%;
   font-family: 'Comfortaa', cursive;
-  z-index: 2;
+  z-index: 10;
 }
 /* navi text */
   
@@ -48,7 +48,7 @@ body {
   background-color: #ddd;
   color: black;
   font-family: 'Comfortaa', cursive;
-  z-index: 2;
+  z-index: 10;
 }
 /* navi active */
   
@@ -129,7 +129,7 @@ body {
   top: -400px;
 }
 
-#ties {
+#GNU {
   padding-top: 1300px;
   padding-left: 400px;
   padding-right: 400px;
@@ -139,6 +139,7 @@ body {
   text-align: center;
   font-family: 'Poppins', sans-serif;
   font-size: 45px;
+  z-index: 2;
 }
 
 #history {
@@ -149,8 +150,7 @@ body {
   padding-left: 300px;
   z-index: 1;
   position: relative;
-  top: -360px;
-  height: 150vh;
+  top: -800px;
 }
 
 #members {
