@@ -177,6 +177,9 @@ table{
     text-align: center;
     margin: 0 auto;
 } 
+td:hover {
+  font-weight: bold;
+}
 
 a{
   color: #FAE8EB;
